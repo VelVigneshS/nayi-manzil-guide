@@ -1,0 +1,135 @@
+{
+  "app": {
+    "name": "Nayi Manzil",
+    "tagline": "Your Career Guidance Companion",
+    "description": "Official Career Guidance Platform for Jammu & Kashmir"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "features": "Features",
+    "login": "Login",
+    "signup": "Sign Up",
+    "dashboard": "Dashboard",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "landing": {
+    "hero": {
+      "title": "Shape Your Future with",
+      "subtitle": "Smart Career Guidance for J&K Students",
+      "description": "Get personalized career recommendations based on your interests, aptitude, and local opportunities in Jammu & Kashmir",
+      "cta": "Start Your Journey",
+      "learnMore": "Learn More"
+    },
+    "problem": {
+      "title": "The Challenge We're Solving",
+      "subtitle": "Why students are struggling with career decisions",
+      "description": "The decline in student enrollment in government degree colleges is not a consequence of poor infrastructure or lack of teaching resources. At the heart of the problem lies a critical gap in awareness.",
+      "points": [
+        "Students don't understand the importance of graduation and career opportunities",
+        "Confusion about subject streams (Arts, Science, Commerce) after Class 10 or 12",
+        "Lack of awareness about degree programs in nearby government colleges",
+        "Uncertainty about jobs or higher studies after choosing a course",
+        "Unclear whether pursuing graduation is worth the effort"
+      ],
+      "impact": "This lack of clarity leads to poor academic decisions, dropouts, or migration to private institutions that often promise but fail to deliver quality education."
+    },
+    "features": {
+      "title": "How Nayi Manzil Helps",
+      "subtitle": "Comprehensive career guidance at your fingertips",
+      "items": [
+        {
+          "title": "Personalized Assessments",
+          "description": "Take aptitude and interest tests to discover your strengths and preferences"
+        },
+        {
+          "title": "College Search",
+          "description": "Find government colleges in J&K with detailed information about courses and admissions"
+        },
+        {
+          "title": "Career Recommendations",
+          "description": "Get tailored career suggestions based on your profile and local opportunities"
+        },
+        {
+          "title": "Exam Information",
+          "description": "Stay updated with entrance exams and admission processes"
+        }
+      ]
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Continue your career journey",
+      "email": "Email Address",
+      "password": "Password",
+      "submit": "Sign In",
+      "forgotPassword": "Forgot Password?",
+      "noAccount": "Don't have an account?",
+      "signupLink": "Sign up here"
+    },
+    "signup": {
+      "title": "Join Nayi Manzil",
+      "subtitle": "Start your personalized career guidance",
+      "name": "Full Name",
+      "email": "Email Address",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "class": "Current Class",
+      "region": "Select Your Region in J&K",
+      "submit": "Create Account",
+      "hasAccount": "Already have an account?",
+      "loginLink": "Sign in here",
+      "regions": [
+        "Srinagar",
+        "Jammu",
+        "Baramulla",
+        "Anantnag",
+        "Kupwara",
+        "Budgam",
+        "Pulwama",
+        "Rajouri",
+        "Kathua",
+        "Udhampur"
+      ]
+    }
+  },
+  "dashboard": {
+    "welcome": "Welcome",
+    "subtitle": "Let's continue building your career path",
+    "features": {
+      "quiz": {
+        "title": "Take Assessment",
+        "description": "Discover your interests and aptitudes",
+        "cta": "Start Quiz"
+      },
+      "colleges": {
+        "title": "Search Colleges",
+        "description": "Find government colleges in J&K",
+        "cta": "Browse Colleges"
+      },
+      "exams": {
+        "title": "Exam Information",
+        "description": "Stay updated with entrance exams",
+        "cta": "View Exams"
+      },
+      "recommendations": {
+        "title": "My Recommendations",
+        "description": "View your personalized career suggestions",
+        "cta": "See Recommendations"
+      }
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try Again",
+    "next": "Next",
+    "previous": "Previous",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "close": "Close"
+  }
+}

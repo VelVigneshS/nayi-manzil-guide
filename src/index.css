@@ -2,41 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Nayi Manzil - J&K Career Guidance App Design System
+Government app aesthetic with Indian flag inspired colors
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
+    /* Base colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 220 15% 20%;
 
+    /* Card components */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 15% 20%;
 
+    /* Popover components */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 15% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Government Primary - Deep Saffron/Orange */
+    --primary: 25 95% 53%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 25 95% 65%;
+    --primary-dark: 25 95% 40%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Government Secondary - Forest Green */
+    --secondary: 140 50% 25%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 140 50% 35%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted tones */
+    --muted: 210 40% 96%;
+    --muted-foreground: 220 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Lighter saffron */
+    --accent: 35 85% 90%;
+    --accent-foreground: 25 95% 35%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Success state */
+    --success: 140 70% 45%;
+    --success-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Warning state */
+    --warning: 45 95% 55%;
+    --warning-foreground: 45 95% 20%;
 
-    --radius: 0.5rem;
+    /* Destructive */
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders and inputs */
+    --border: 220 15% 85%;
+    --input: 220 15% 92%;
+    --ring: 25 95% 53%;
+
+    /* Government gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(25 95% 53%), hsl(25 95% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(25 95% 53%), hsl(140 50% 25%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(35 85% 95%));
+    
+    /* Shadows with government colors */
+    --shadow-primary: 0 10px 25px -5px hsl(25 95% 53% / 0.25);
+    --shadow-card: 0 4px 15px -3px hsl(220 15% 20% / 0.1);
+    --shadow-hero: 0 20px 40px -10px hsl(25 95% 53% / 0.3);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +87,53 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark mode for government app */
+    --background: 220 25% 8%;
+    --foreground: 0 0% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 25% 10%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 25% 10%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    /* Maintain government colors in dark mode */
+    --primary: 25 95% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 25 95% 65%;
+    --primary-dark: 25 95% 45%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 140 50% 30%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 140 50% 40%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 220 25% 15%;
+    --muted-foreground: 220 15% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 220 25% 15%;
+    --accent-foreground: 25 95% 55%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --success: 140 70% 50%;
+    --success-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --warning: 45 95% 60%;
+    --warning-foreground: 45 95% 15%;
+
+    --destructive: 0 85% 65%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 25% 20%;
+    --input: 220 25% 18%;
+    --ring: 25 95% 55%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(25 95% 55%), hsl(25 95% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(25 95% 55%), hsl(140 50% 30%));
+    --gradient-card: linear-gradient(145deg, hsl(220 25% 10%), hsl(220 25% 15%));
+    
+    --shadow-primary: 0 10px 25px -5px hsl(25 95% 55% / 0.4);
+    --shadow-card: 0 4px 15px -3px hsl(0 0% 0% / 0.3);
+    --shadow-hero: 0 20px 40px -10px hsl(25 95% 55% / 0.5);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
