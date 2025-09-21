@@ -8,8 +8,8 @@ interface Translations {
   [key: string]: any;
 }
 
-// Available translations
-const translations: Record<Language, () => Promise<Translations>> = {
+// Available translation imports
+const translationImports: Record<Language, () => Promise<Translations>> = {
   en: () => import('../translations/en.json'),
   hi: () => import('../translations/hi.json'),
   ur: () => import('../translations/ur.json'),
@@ -37,12 +37,12 @@ export function useTranslation() {
     const loadTranslations = async () => {
       setLoading(true);
       try {
-        const translationModule = await translations[currentLanguage]();
+        const translationModule = await translationImports[currentLanguage]();
         setTranslations(translationModule.default || translationModule);
       } catch (error) {
         console.error('Failed to load translations:', error);
         // Fallback to English
-        const fallbackModule = await translations.en();
+        const fallbackModule = await translationImports.en();
         setTranslations(fallbackModule.default || fallbackModule);
       } finally {
         setLoading(false);
@@ -93,7 +93,7 @@ export function useTranslation() {
   // Initialize language from localStorage
   useEffect(() => {
     const savedLanguage = localStorage.getItem('nayi-manzil-language') as Language;
-    if (savedLanguage && savedLanguage in translations) {
+    if (savedLanguage && savedLanguage in translationImports) {
       setCurrentLanguage(savedLanguage);
     }
   }, []);
